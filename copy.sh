@@ -65,6 +65,18 @@ echo "________________Taking Snapshot Of Other_Binaries_____________________"
 tree -L 1 other_binaries/ > system_configurations/OtherBinaries/tree_structure.txt
 
 
+
+
+
+# Copying Wallpapers
+echo "________________Copying Wallpapers_____________________"
+cp -v -r Pictures/wallpapers/* system_configurations/Wallpapers
+
+
+
+
+
+
 # Copy Webcam Config
 echo "________________Copying WebCam Config_____________________"
 cp -v  /etc/modprobe.d/blacklist.conf  system_configurations/Webcam
