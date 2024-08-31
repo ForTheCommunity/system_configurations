@@ -1,0 +1,3 @@
+
+read -p "File Name of Image : " file_name
+grim -g "$(slurp)" $file_name

@@ -1,0 +1,4 @@
+#/bin/bash
+
+echo "Current Time -->> $(TZ='Asia/Kathmandu' date +'%A, %Y-%m-%d %I:%M:%S %p')"
+

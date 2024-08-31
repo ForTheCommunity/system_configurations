@@ -1,0 +1,12 @@
+#/bin/bash
+
+SSID="Desktop@Audio_Server"
+PASSWORD="Iy9iaW4vYmF"
+
+echo $SSID
+echo $PASSWORD
+
+sudo nmcli dev wifi hotspot ifname wlp2s0 ssid $SSID password $PASSWORD
+
+
+

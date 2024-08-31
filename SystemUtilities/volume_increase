@@ -1,0 +1,5 @@
+#/bin/bash
+
+amixer set Master 10%+
+
+echo "Volume Increased By 10%"

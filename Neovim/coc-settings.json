@@ -1,0 +1,46 @@
+{
+  "languageserver": {
+    "rust-analyzer": {
+      "command": "rust-analyzer-x86_64-unknown-linux-gnu",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"],
+      "initializationOptions": {}
+    },
+
+  "clangd": {
+	    "command": "clangd-16",
+	    "rootPatterns": ["Makefile",".git/"],
+	    "filetypes": ["c", "cpp", "objc", "objcpp"],
+	    "initializationOptions": {
+        	"clangdFileStatus": true
+	  }
+    },
+
+    "gopls": {
+	   "command": "gopls",
+	   "rootPatterns": ["go.mod","go.work",".git/"],
+	   "filetypes": ["go"],
+	   "initializationOptions": {
+		"usePlaceholders": true
+	   }
+    },
+
+    "zls":{
+	"command": "zls",
+	"rootPatterns": ["build.zig",".git/"],
+	"filetypes": ["zig"],
+	"initializationOptions": {}
+    },
+    
+
+  },
+ "coc.preferences.formatOnSaveFiletypes": ["rust","c","cpp","go","zig","dart","python"],
+ "python.formatting.provider": "black",
+  "python.formatting.blackPath": "black",
+  "python.formatting.blackArgs": [
+    "--line-length=88"
+  ],
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true
+}
+

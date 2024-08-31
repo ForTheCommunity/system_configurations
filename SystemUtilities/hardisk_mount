@@ -1,0 +1,13 @@
+#/bin/bash
+
+lsblk
+
+echo "_____Enter HardDisk Name / Partition to Mount :-  "
+
+read harddisk_partition
+
+
+echo   $harddisk_partition
+
+sudo mount -t ext4 /dev/$harddisk_partition /media/debian/HardDisk
+

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Running Todo App"
+
+# Start processes and store PIDs
+/home/debian/custom_binaries/TodoApp/serve_frontend.sh &
+todo_frontend_pid=$!
+
+/home/debian/custom_binaries/TodoApp/backend/todo-app-backend &
+todo_backend_pid=$!
+
+echo "Started frontend (PID: $frontend_pid) and backend (PID: $backend_pid)."
+
+# Function to stop the processes
+stop_processes() {
+  echo "Stopping processes..."
+  kill $todo_frontend_pid
+  kill $todo_backend_pid
+  echo "Processes stopped."
+}
+
+# Trap EXIT signal to stop processes when script is terminated
+trap stop_processes EXIT
+
+# Wait for processes to complete
+wait $frontend_pid
+wait $backend_pid
+

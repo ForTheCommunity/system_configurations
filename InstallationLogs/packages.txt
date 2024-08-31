@@ -1,0 +1,203 @@
+apt install network-manager nmcli amixer brightnessctl acpi htop btop
+
+
+# installed packages
+apt install lsd bat
+
+# Installed NerdFonts for LSD And NeoVim/NVCHAD
+# Installed Neovim from Binary.
+# Nvim Dependencies
+apt install ripgrep
+
+
+# Terminator
+apt install terminator
+
+
+# build-essentials
+apt install build-essentials
+
+# Installed Rustup and rust.
+# Downloaded Rust Analyser Binary from github release
+# and copied binary of rust-analyzer-x86_64-unknown-linux-gnu to $HOME/.cargo/bin
+
+cargo install cargo-cache
+cargo install tokei
+
+apt install ffmpeg
+
+
+# Installing VSCODE
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+apt install code
+
+
+# Installed NodeJs via NVM and installed pnpm via npm ,,
+# and installed global packages using pnpm like
+@angular/cli
+http-server
+prettier
+typescript
+
+
+
+
+# Podman
+apt install podman
+
+
+
+
+# QEMU
+apt install qemu-system virt-manager
+
+# PortAudio | Alsa for capturing sound from microphone using rust cpal / portaudio crate.....
+# Alsa is not crossplatform but portaudio is cross-platform
+apt install  portaudio19-dev libasound2-dev
+
+
+
+# Downloaded Ventory linux_tar and installed it inside custom_binaries
+
+
+
+# Installed From TarFiles ->
+# 1. installed Golang
+# 2. installed ZigLang
+
+# Installed Hoppscotch from AppImage.........
+
+# Installed Diagrams/Dwaw.io desktop AppImage
+
+# Installed Popcorn Times AppImage
+
+# Rust
+# Yew ->
+rustup target add wasm32-unknown-unknown
+cargo install --locked trunk
+
+# MUSL
+rustup target add x86_64-unknown-linux-musl
+apt-get install musl-tools
+
+# installed pkg-config as a build dependency of Rust Openssl crate. 
+apt install pkg-config
+
+
+
+# Installed Tauri and All its Dependencies.....
+
+
+# Sqlite Client
+apt install sqlite3
+
+# SWAY
+sudo apt update
+sudo apt install sway
+
+sudo apt install swaybg     # For setting wallpaper
+sudo apt install swaylock   # For screen locking
+sudo apt install waybar     # For status bar
+sudo apt install grim       # For taking screenshots
+sudo apt install slurp      # For selecting regions for screenshots
+sudo apt install mako       # For notifications
+
+
+# extra
+apt install alacritty
+
+
+
+# c/c++
+apt install clang-16  # compiler
+apt install clangd-16 # lsp
+apt install clang-format-16 # code formatter
+apt install make cmake
+
+
+apt install codeblocks
+
+
+# Firefox Extensions
+# 1. Save ChatGpt as Pdf
+# 2. DuckDuckGo Privacy Essentials
+# 3. Hoppscotch Browser Extension
+# 4. REST Client APIsHub
+# 5. RESTED
+# 6. RESTer
+# 7. SingleFile
+# 8. uBlock Origin
+
+# Uninstalled Default Preinstalled Firefox and installed firefox-esr with All Language Support.
+apt purge firefox-esr
+apt autoremove
+apt clean
+apt update ; apt upgrade
+apt install firefox-esr-l10n-all
+
+
+# Disk Usage Utilities
+apt install ncdu
+cargo install du-dust
+
+# flatpak
+apt install flatpak
+flatpak install flathub org.mozilla.firefox
+flatpak install flathub io.gitlab.librewolf-community
+
+
+
+# Installed Lsps
+# For Golang
+go install golang.org/x/tools/gopls@latest
+cp ~/go/bin/gopls ~/.cargo/bin/
+
+# For Zig Lang
+# eg. wget https://github.com/zigtools/zls/releases/download/0.13.0/zls-x86_64-linux.tar.xz
+cp zls ~/.cargo/bin/
+ln -s /home/debian/custom_binaries/ziglang/zig/zig ~/.cargo/bin/zig
+
+
+# Installed Zellij via release page(github)
+# created .config/zellij/config.kdl
+
+# Installed Alacritty via cargo install alacritty
+
+
+
+
+# Debian Maintainer Tools
+apt install lintian
+
+
+# Installing Podman Compose
+apt install python3-pip
+apt install python3.11-venv
+python3 -m venv python_virtual_env
+source ~/python_virtual_env/bin/activate
+pip3 install podman-compose
+deactivate
+
+# Installed Flutter Version Manager(FVM) using tar file from github release page
+# Installed Flutter SDK Flutter Version Manager(FVM).... Dart Installed by Flutter automatically..
+# FVM also installs darts but that dart is ignored and dart instaled by flutter is used.. this is
+# possible because of configurations made in .bashrc file.........
+# Flutter's dependencies
+sudo apt-get install  clang cmake git  ninja-build pkg-config  libgtk-3-dev liblzma-dev libstdc++-12-dev
+# Installed Android Studio (Jdk,jvm are bundled with androdi studio so no need to download it manually...)
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+
+
+# Network Minitoring Tools
+apt install cbm nload bmon iftop nethogs
+
+# Python Code/File Formatter
+apt install black
+
+
+# Gitoxide / gix
+cargo install --git https://github.com/Byron/gitoxide  gitoxide

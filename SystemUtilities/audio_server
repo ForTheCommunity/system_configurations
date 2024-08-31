@@ -1,0 +1,22 @@
+
+ifconfig
+echo "________________________________________________________"
+
+audio_server_address=$(ip addr show wlp2s0 | grep -oP 'inet \K[\d.]+')
+echo "Audio Server Address : $audio_server_address"
+echo "______________________________________________________________"
+audio_server_port=65530
+echo " Audio Server Port : $audio_server_port"
+echo "______________________________________________________________"
+systemctl status ufw
+echo "________________________________________________________________" 
+sudo systemctl start ufw
+systemctl status ufw
+echo "____________________________________________________________"
+sudo ufw allow proto tcp from any to $audio_server_address port $audio_server_port
+sudo ufw allow proto udp from any to $audio_server_address port $audio_server_port
+echo "_______________________________________________________________"
+
+as-cmd -b $audio_server_address
+
+

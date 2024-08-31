@@ -1,0 +1,5 @@
+#/bin/bash
+
+brightnessctl set 10%-
+
+echo "decreased by 10%"

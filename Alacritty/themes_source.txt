@@ -1,0 +1,1 @@
+themes cloned from  https://github.com/alacritty/alacritty-theme

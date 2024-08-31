@@ -1,0 +1,38 @@
+theme = "base16_transparent"
+
+[editor]
+line-number = "relative"
+mouse = false
+auto-completion = true
+auto-format = true
+auto-info = true
+
+
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+enable = true
+display-messages = true
+goto-reference-include-declaration = true
+snippets = true
+
+
+
+
+[keys.normal]
+" " = {"s" = ":write","q" = ":quit"}
+"up" = "move_visual_line_up"
+"down" = "move_visual_line_down"
+
+[keys.insert]
+"up" = "move_visual_line_up"
+"down" = "move_visual_line_down"
+

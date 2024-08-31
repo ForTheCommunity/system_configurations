@@ -1,0 +1,16 @@
+other_binaries/
+├── AndroidSDK
+├── AndroidStudio
+├── element-desktop-1.11.75
+├── FVM
+├── golang
+├── Helix
+├── Jellyfin
+├── MilkMan
+├── nvim-linux64
+├── Pororoca
+├── syncthing
+├── ventoy
+└── ziglang
+
+14 directories, 0 files

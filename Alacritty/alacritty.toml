@@ -1,0 +1,40 @@
+import = [
+	"~/.config/alacritty/themes/alacritty-theme/hyper.toml"
+]
+
+[window]
+padding.x = 10
+padding.y = 10
+decorations = "Buttonless"
+opacity = 0.8
+blur = false
+title = "A-Term"
+
+
+[font]
+normal = { family = "0xProto Nerd Font Mono", style = "Regular" }
+size = 15
+
+
+[colors]
+[colors.primary]
+foreground = "#00FF00"
+background = "#000000"
+
+
+[cursor]
+style = {shape = "Underline",blinking = "On"}
+blink_interval = 150
+blink_timeout = 30
+unfocused_hollow = false
+thickness = 0.20
+
+
+[terminal]
+osc52 = "OnlyCopy"
+
+
+
+[mouse]
+hide_when_typing = true
+

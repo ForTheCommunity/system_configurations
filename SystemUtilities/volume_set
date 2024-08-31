@@ -1,0 +1,11 @@
+#/bin/bash
+
+echo "Enter Volume in Percentage .ie. 50% , 40% , 80% ...."
+echo "_______________________________________________________________"
+echo "---------------------------------------------------------------"
+
+echo "Enter Specific Volume :- "
+
+read volume
+
+amixer set Master $volume
