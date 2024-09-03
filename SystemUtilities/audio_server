@@ -1,8 +1,13 @@
-
-ifconfig
 echo "________________________________________________________"
 
-audio_server_address=$(ip addr show wlp2s0 | grep -oP 'inet \K[\d.]+')
+# Show available Network Devices/Interfaces
+echo "Available Network Interfaces / Devices..."
+ls /sys/class/net/
+
+# Prompt the user to enter the network interface name
+read -p "Enter the network interface name: " interface_name
+
+audio_server_address=$(ip addr show "$interface_name" | grep -oP 'inet \K[\d.]+')
 echo "Audio Server Address : $audio_server_address"
 echo "______________________________________________________________"
 audio_server_port=65530
