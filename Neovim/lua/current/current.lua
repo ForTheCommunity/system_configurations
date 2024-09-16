@@ -81,7 +81,7 @@ end
 
 local opts = { noremap = true, silent = true }
 -- Themes KeyMapping...
-vim.keymap.set("n","<leader>th",my_themes,opts)
+vim.keymap.set("n","<leader>the",my_themes,opts)
 
 
 

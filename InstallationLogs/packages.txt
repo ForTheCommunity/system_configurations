@@ -1,3 +1,8 @@
+# DONT RUN THIS AS A SCRIPT ,, THIS IS JUST A LOG FILE THAT STORES INSTALLATIONS DONE IN SYSTEM..
+# THIS IS NOT GENERATED AUTOMATICALLY BY USING ANY PROGRAM OR SOFTWARE.. THIS IS LOGGED MANUALLY...
+
+
+
 apt install network-manager nmcli amixer brightnessctl acpi htop btop
 
 
@@ -201,3 +206,37 @@ apt install black
 
 # Gitoxide / gix
 cargo install --git https://github.com/Byron/gitoxide  gitoxide
+
+
+# KDE Connect
+apt install kdeconnect
+
+# Dependency of Arduino , ESP DEV BOARDS.
+apt install python3-serial
+# ESP-IDF
+sudo apt-get install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+
+# Installing ESP-IDF
+git clone https://github.com/espressif/esp-idf --depth=1
+#or
+gix clone https://github.com/espressif/esp-idf
+# or
+wget https://github.com/espressif/esp-idf/archive/refs/heads/master.zip
+# or
+wget https://github.com/espressif/esp-idf/releases/download/v5.3.1/esp-idf-v5.3.1.zip
+
+# ESP-RS
+cargo install espup
+espup install
+. /home/debian/export-esp.sh
+cargo install espflash
+cargo install cargo-generate
+
+
+# Installed Github Cli (gh) using linux amd64 tar (binary) , from github release page.....located in others_binaries dir...
+
+
+
+# Todo , Note App , Task Managers
+apt-get install taskwarrior
+# installed joplin using appimage

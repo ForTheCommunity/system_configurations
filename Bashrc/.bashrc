@@ -139,6 +139,8 @@ alias matrix='$OTHER_BINARIES_DIR/element-desktop-1.11.75/element-desktop'
 # JellyFin Server
 alias jellyfin='$OTHER_BINARIES_DIR/Jellyfin/jellyfin_10.9.9-amd64/jellyfin/jellyfin'
 
+alias gh='$OTHER_BINARIES_DIR/gh_cli/bin/gh'
+
 alias bat=batcat
 alias view_pdf=evince
 
@@ -156,8 +158,7 @@ alias librewolf='flatpak run io.gitlab.librewolf-community'
 
 
 # Other Exports
-export media_serving_server_directory_path=/media/debian/HardDisk/Movies
-
+export media_serving_server_directory_path=/media/debian/HardDisk/Medias
 
 # Dart Flutter Development
 # Dart SDK

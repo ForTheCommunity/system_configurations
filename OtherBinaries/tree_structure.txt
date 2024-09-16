@@ -3,8 +3,10 @@ other_binaries/
 ├── AndroidStudio
 ├── element-desktop-1.11.75
 ├── FVM
+├── gh_cli
 ├── golang
 ├── Helix
+├── i2p
 ├── Jellyfin
 ├── MilkMan
 ├── nvim-linux64
@@ -13,4 +15,4 @@ other_binaries/
 ├── ventoy
 └── ziglang
 
-14 directories, 0 files
+16 directories, 0 files

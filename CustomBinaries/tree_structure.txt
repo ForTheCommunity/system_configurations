@@ -1,4 +1,5 @@
 custom_binaries/
+├── arduino-ide_2.3.2_Linux_64bit.AppImage
 ├── as-cmd
 ├── bruno_1.19.0_x86_64_linux.AppImage
 ├── drawio-x86_64-24.6.4.AppImage
@@ -6,6 +7,7 @@ custom_binaries/
 ├── Hoppscotch_linux_x64.AppImage
 ├── Inkscape-091e20e-x86_64.AppImage
 ├── Insomnium.Core-0.2.3-a.AppImage
+├── Joplin-3.0.15.AppImage
 ├── KeeWeb-1.18.7.linux.AppImage
 ├── lapce
 ├── LocalSend-1.15.4-linux-x86-64.AppImage
@@ -18,4 +20,4 @@ custom_binaries/
 ├── yt-dlp_linux
 └── zellij
 
-1 directory, 18 files
+1 directory, 20 files

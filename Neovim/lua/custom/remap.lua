@@ -25,4 +25,10 @@ vim.api.nvim_set_keymap('n', '<leader>wl', '<C-w>l', opts)  --  Move to the wind
 
 
 
+-- Window Resizing
+-- Resize splits with arrow keys
+vim.api.nvim_set_keymap('n', '<C-Up>', ':resize -2<CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-Down>', ':resize +2<CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize +2<CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize -2<CR>', opts)
 
