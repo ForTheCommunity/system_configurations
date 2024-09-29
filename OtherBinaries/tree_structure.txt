@@ -4,7 +4,6 @@ other_binaries/
 ├── element-desktop-1.11.75
 ├── FVM
 ├── gh_cli
-├── golang
 ├── Helix
 ├── i2p
 ├── Jellyfin
@@ -12,7 +11,7 @@ other_binaries/
 ├── nvim-linux64
 ├── Pororoca
 ├── syncthing
-├── ventoy
-└── ziglang
+├── Telegram
+└── ventoy
 
-16 directories, 0 files
+15 directories, 0 files

@@ -10,14 +10,15 @@ esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+# HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
-shopt -s histappend
+# shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=0
+HISTFILESIZE=0
+HISTFILE=/dev/null
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -132,9 +133,13 @@ alias nvim='$OTHER_BINARIES_DIR/nvim-linux64/bin/nvim'
 alias hx='$OTHER_BINARIES_DIR/Helix/helix-24.03-x86_64-linux/hx'
 alias milkman='$OTHER_BINARIES_DIR/MilkMan/milkman-dist-linux64-bin/milkman-5.9.0/milkman.sh'
 alias pororoca='$OTHER_BINARIES_DIR/Pororoca/Pororoca'
-alias zig='$OTHER_BINARIES_DIR/ziglang/zig/zig'
+
 
 alias matrix='$OTHER_BINARIES_DIR/element-desktop-1.11.75/element-desktop'
+alias telegram='$OTHER_BINARIES_DIR/Telegram/Telegram'
+
+alias syncthing='$OTHER_BINARIES_DIR/syncthing/syncthing-linux-amd64-v1.27.10/syncthing'
+
 
 # JellyFin Server
 alias jellyfin='$OTHER_BINARIES_DIR/Jellyfin/jellyfin_10.9.9-amd64/jellyfin/jellyfin'
@@ -143,10 +148,15 @@ alias gh='$OTHER_BINARIES_DIR/gh_cli/bin/gh'
 
 alias bat=batcat
 alias view_pdf=evince
-
+alias ls=lsd
+alias settings=gnome-control-center
 
 # Langs
 export PATH=$PATH:/home/debian/other_binaries/golang/go/go/bin
+
+
+# Cargo Custom Build Target
+export CARGO_TARGET_DIR=/tmp/cargo-target
 
 # Custom Binaries
 export PATH=$PATH:~/custom_binaries
@@ -154,8 +164,7 @@ export PATH=$PATH:~/custom_binaries
 # Flatpak
 alias firefox='flatpak run org.mozilla.firefox'
 alias librewolf='flatpak run io.gitlab.librewolf-community'
-
-
+alias obs='flatpak run com.obsproject.Studio'
 
 # Other Exports
 export media_serving_server_directory_path=/media/debian/HardDisk/Medias

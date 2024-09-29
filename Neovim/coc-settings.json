@@ -16,31 +16,15 @@
 	  }
     },
 
-    "gopls": {
-	   "command": "gopls",
-	   "rootPatterns": ["go.mod","go.work",".git/"],
-	   "filetypes": ["go"],
-	   "initializationOptions": {
-		"usePlaceholders": true
-	   }
-    },
-
-    "zls":{
-	"command": "zls",
-	"rootPatterns": ["build.zig",".git/"],
-	"filetypes": ["zig"],
-	"initializationOptions": {}
-    },
     
+  "cmake": {
+	    "command": "~/python_virtual_env/bin/cmake-language-server",
+	    "rootPatterns": ["CMakeLists.txt","Makefile",".git/","builds"],
+	    "filetypes": ["cmake"],
+	    "initializationOptions": {}
+    },
 
   },
- "coc.preferences.formatOnSaveFiletypes": ["rust","c","cpp","go","zig","dart","python"],
- "python.formatting.provider": "black",
-  "python.formatting.blackPath": "black",
-  "python.formatting.blackArgs": [
-    "--line-length=88"
-  ],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true
+ "coc.preferences.formatOnSaveFiletypes": ["rust","c","cpp","dart"],
 }
 

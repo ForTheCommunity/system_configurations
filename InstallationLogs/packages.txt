@@ -153,7 +153,7 @@ cargo install du-dust
 apt install flatpak
 flatpak install flathub org.mozilla.firefox
 flatpak install flathub io.gitlab.librewolf-community
-
+flatpak install flathub com.obsproject.Studio
 
 
 # Installed Lsps
@@ -240,3 +240,13 @@ cargo install cargo-generate
 # Todo , Note App , Task Managers
 apt-get install taskwarrior
 # installed joplin using appimage
+
+
+# Cmake Lsp
+source ~/python_virtual_env/bin/activate
+pip install cmake-language-server
+deactivate
+
+
+# Git Visualizers
+apt install gitg
