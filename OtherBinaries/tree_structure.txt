@@ -1,17 +1,15 @@
 other_binaries/
 ├── AndroidSDK
 ├── AndroidStudio
+├── Briar
 ├── element-desktop-1.11.75
 ├── FVM
 ├── gh_cli
 ├── Helix
 ├── i2p
-├── Jellyfin
 ├── MilkMan
 ├── nvim-linux64
 ├── Pororoca
-├── syncthing
-├── Telegram
 └── ventoy
 
-15 directories, 0 files
+13 directories, 0 files

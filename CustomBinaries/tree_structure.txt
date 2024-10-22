@@ -11,14 +11,10 @@ custom_binaries/
 ├── KeeWeb-1.18.7.linux.AppImage
 ├── lapce
 ├── LocalSend-1.15.4-linux-x86-64.AppImage
-├── qbittorrent-5.0.0rc1_lt20_x86_64.AppImage
-├── QOwnNotes-x86_64.AppImage
 ├── rqbit-linux-amd64
 ├── rustdesk-1.2.6-x86_64.AppImage
-├── session-desktop-linux-x86_64-1.13.2.AppImage
 ├── tutanota-desktop-linux.AppImage
 ├── yt-dlp_linux
-├── zellij
-└── Zettlr-3.2.1-x86_64.AppImage
+└── zellij
 
-1 directory, 21 files
+1 directory, 17 files

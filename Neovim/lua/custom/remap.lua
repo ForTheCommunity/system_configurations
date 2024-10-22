@@ -32,3 +32,10 @@ vim.api.nvim_set_keymap('n', '<C-Down>', ':resize +2<CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize +2<CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize -2<CR>', opts)
 
+
+
+-- Go To Definition (gd) Navigations
+vim.api.nvim_set_keymap('n', '<leader>f' , '<C-i>',opts) -- go forward
+vim.api.nvim_set_keymap('n', '<leader>b' , '<C-o>',opts) -- go backward
+
+

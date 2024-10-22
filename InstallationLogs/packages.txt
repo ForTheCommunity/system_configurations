@@ -14,6 +14,9 @@ apt install lsd bat
 # Nvim Dependencies
 apt install ripgrep
 
+apt install wl-clipboard
+
+
 
 # Terminator
 apt install terminator
@@ -152,9 +155,9 @@ cargo install du-dust
 # flatpak
 apt install flatpak
 flatpak install flathub org.mozilla.firefox
-flatpak install flathub io.gitlab.librewolf-community
-flatpak install flathub com.obsproject.Studio
-
+flatpak install flathub org.inkscape.Inkscape
+flatpak install flathub org.kde.okular
+flatpak install flathub org.kde.kdenlive
 
 # Installed Lsps
 # For Golang
@@ -250,3 +253,13 @@ deactivate
 
 # Git Visualizers
 apt install gitg
+
+
+# Screen Recorder thats works out of the box in Sway DE
+apt install wf-recorder
+
+#start libvirtd before usng qemu i.e systemctl start libvirtd
+
+
+
+

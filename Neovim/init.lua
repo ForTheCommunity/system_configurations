@@ -60,7 +60,7 @@ vim.api.nvim_set_keymap('n', 'K', ':call CocActionAsync("doHover")<CR>', {silent
 vim.api.nvim_set_keymap('n', '[d', '<Plug>(coc-diagnostic-prev)', {silent = true})
 vim.api.nvim_set_keymap('n', ']d', '<Plug>(coc-diagnostic-next)', {silent = true})
 vim.api.nvim_set_keymap('n', '<space>rn', '<Plug>(coc-rename)', {silent = true})
-vim.api.nvim_set_keymap('n', '<space>f', ':CocCommand rust-analyzer.applySourceChange<CR>', {silent = true, noremap = true})
+-- vim.api.nvim_set_keymap('n', '<space>f', ':CocCommand rust-analyzer.applySourceChange<CR>', {silent = true, noremap = true})
 -- Use <CR> to confirm completion
 vim.api.nvim_set_keymap('i', '<CR>', 'pumvisible() ? coc#_select_confirm() : "<CR>"', {expr = true, silent = true, noremap = true})
 

@@ -136,13 +136,7 @@ alias pororoca='$OTHER_BINARIES_DIR/Pororoca/Pororoca'
 
 
 alias matrix='$OTHER_BINARIES_DIR/element-desktop-1.11.75/element-desktop'
-alias telegram='$OTHER_BINARIES_DIR/Telegram/Telegram'
 
-alias syncthing='$OTHER_BINARIES_DIR/syncthing/syncthing-linux-amd64-v1.27.10/syncthing'
-
-
-# JellyFin Server
-alias jellyfin='$OTHER_BINARIES_DIR/Jellyfin/jellyfin_10.9.9-amd64/jellyfin/jellyfin'
 
 alias gh='$OTHER_BINARIES_DIR/gh_cli/bin/gh'
 
@@ -150,6 +144,8 @@ alias bat=batcat
 alias view_pdf=evince
 alias ls=lsd
 alias settings=gnome-control-center
+alias whereami=pwd
+
 
 # Langs
 export PATH=$PATH:/home/debian/other_binaries/golang/go/go/bin
@@ -163,8 +159,9 @@ export PATH=$PATH:~/custom_binaries
 
 # Flatpak
 alias firefox='flatpak run org.mozilla.firefox'
-alias librewolf='flatpak run io.gitlab.librewolf-community'
-alias obs='flatpak run com.obsproject.Studio'
+alias inkscape='flatpak run org.inkscape.Inkscape'
+alias okular='flatpak run org.kde.okular'
+alias kdenlive='flatpak run org.kde.kdenlive'
 
 # Other Exports
 export media_serving_server_directory_path=/media/debian/HardDisk/Medias
